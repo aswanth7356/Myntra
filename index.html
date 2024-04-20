@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="./Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -59,8 +61,14 @@
                                     class="fa-regular fa-heart fa-1x"></i></a></b>
                     </li>
                     <li class="nav-item px-2">
-                        <b><a class="nav-link text-dark" aria-current="page" href="#"><i
-                                    class="fa-solid fa-bag-shopping"></i></a></b>
+                        <!-- <b><a class="nav-link text-dark" aria-current="page" href="#"><i
+                                    class="fa-solid fa-bag-shopping"></i></a></b> -->
+
+            <!-- Button trigger modal -->
+            <button type="button" class="Signup btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                LOGIN
+            </button>
+
                     </li>
                 </ul>
             </div>
@@ -69,8 +77,6 @@
 
 
     <!-- Carousel -->
-
-   
 
 
     </div>
@@ -133,25 +139,27 @@
     <div class="container w-25">
         <div class="row">
 
-            <!-- Button trigger modal -->
+            <!-- Button trigger modal
             <button type="button" class="btn btn-primary mt-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 Launch demo modal
-            </button>
+            </button> -->
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog">
-                    <div class="modal-content">
+                    <div class="modal-content" style="background-color: black;">
+                        <button type="button" class="btn-close position-absolute end-0 bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                            <div class="p-5">
+                                <input type="username" placeholder="User Name" style="width: 250px; text-align: center;border: solid blue 3px; border-radius:  10px ;"><br><br>
+                                <input type="password" placeholder="Password" style="width: 250px; text-align: center;border: solid blue 3px; border-radius:  10px ;">
+                            </div>
                         </div>
-                    <div class="modal-body">
-                        ...
-                </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+                    <button type="button" class="btn btn-primary">Login</button>
                 </div>
                 </div>
             </div>
@@ -166,12 +174,15 @@
 
     <div class="container w-100 mt-1 me-5 ">
         <div class="row">
-                <div class="col-lg-5 col-md-6 col-sm-12 p-5 mb-3" style="margin-top: 50px;">
+                <div class="col-lg-5 col-md-6 col-sm-12 p-5 mb-3" style="margin-top: 50px;"  data-aos="fade-up-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="1000">
                     <h3 class="head">MYNTRA APP</h3>
                     <h6 class="subhead">Myntra, India's no. 1 online fashion destination justifies its fashion relevance by bringing something new and chic to the table on the daily. Fashion trends seem to change at lightning speed, yet the Myntra shopping app has managed to keep up without any hiccups. In addition, Myntra has vowed to serve customers to the best of its ability by introducing its first-ever loyalty program, The Myntra Insider. Gain access to priority delivery, early sales, lucrative deals and other special perks on all your shopping with the Myntra app. Download the Myntra app on your Android or IOS device today and experience shopping like never before!</h6>
                 </div>
     
-                <div class="col-lg-7 col-md-6 col-sm-12 pt-5">
+                <div class="col-lg-7 col-md-6 col-sm-12 pt-5"  data-aos="fade-up-left"
+                data-aos-duration="2000">
                     <img class="w-75 h-80 mx-5"  src="./Images/Shopping.jpg" alt="">
                 </div>
         </div>
@@ -179,29 +190,28 @@
 
     <!-- Card -->
 
-    <div class="container w-50">
-        <div class="row">
-            <div class="card mb-3 mt-5 shadow" style="max-width: 840px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <img src="./Images/Girl 3.jpg" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title head">EXPLORE</h5>
-                      <p class="card-text subhead">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                      <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+
+    <div class="container w-50 mt-5">
+        <div class="card mb-3"  data-aos="zoom-out">
+            <div class="row g-0">
+              <div class="col-md-6">
+                <img src="./Images/Girl 3.jpg" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-md-6">
+                <div class="card-body">
+                  <h5 class="card-title head">Card title</h5>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                 </div>
               </div>
-        </div>
+            </div>
+          </div>
     </div>
     
     
     <!-- cards row -->
 
-    <div class="container w-50">
+    <div class="container w-75">
         <div class="row">
             <div class="col-lg-4 col-sm-12 col-md-6">
                 <div class="card mt-5 shadow ">
@@ -238,12 +248,122 @@
         </div>
     </div>
 
+
+    <div class="container w-50" data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
+        <div class="row mt-5 border  p-3">
+            <div class="col-md-6  border-end">
+                <img src="./Images/Logo.jpg" alt="">
+                <h1>Tesrimonials</h1>
+            </div>
+
+            <div class="col-md-6 p-5">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <b><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, provident quidem. Voluptatem voluptatibus quod voluptas qui adipisci inventore tempore cumque sit reprehenderit! Enim quidem at facere laudantium deserunt consectetur reprehenderit!</p></b>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, maxime quidem beatae ullam eaque temporibus tenetur aperiam vero ea harum inventore consequuntur, fugit cum quae mollitia nesciunt sapiente tempore tempora.</p>
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, facilis obcaecati aut velit laboriosam neque debitis est harum aspernatur incidunt ea provident quidem quas sapiente deserunt, optio ut. Maxime, perspiciatis!</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+
+    <!-- Footer -->
+<div class="pt-1 mt-5" style="background-color: black;">
+    <div class="container-fluid mt-5 w-100 ps-5 pe-5">
+        <div class="row" >
+            <div class="col-lg-2">
+               <h6 class="footer-head">ABOUT</h6>
+                <ul class="list-unstyled">
+                    <li><a class="list" href="">Contact Us</a></li>
+                    <li><a class="list" href="">About us</a></li>
+                    <li><a class="list" href="">Careers</a></li>
+                    <li><a class="list" href="">Press</a></li>
+                    <li><a class="list" href="">Corporate Information</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h6 class="footer-head">GROUP COMPANIES</h6>
+                <ul class="list-unstyled">
+                    <li><a class="list" href="">Flipkart Wholesale</a></li>
+                    <li><a class="list" href="">Cleartrip</a></li>
+                    <li><a class="list" href="">Shopsy</a></li>
+                    <li><a class="list" href="">Myntra</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h6 class="footer-head">HELP</h6>
+                <ul class="list-unstyled">
+                    <li><a class="list" href="">Payment</a></li>
+                    <li><a class="list" href="">Shipping</a></li>
+                    <li><a class="list" href="">Cancellation & Return</a></li>
+                    <li><a class="list" href="">FAQ</a></li>
+                    <li><a class="list" href="">Report Infringement</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 border-end">
+                <h6 class="footer-head">CONSUMER POLICY</h6>
+                <ul class="list-unstyled">
+                    <li><a class="list" href="">Cancellation & Return</a></li>
+                    <li><a class="list" href="">Terms Of Use</a></li>
+                    <li><a class="list" href="">Security</a></li>
+                    <li><a class="list" href="">Privacy</a></li>
+                    <li><a class="list" href="">Sitemap</a></li>
+                    <li><a class="list" href="">Grivance Redressal</a></li>
+                    <li><a class="list" href="">EPR Compilance</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 ">
+                <h6 class="footer-head">Mail Us :</h6>
+                <ul class="list-unstyled">
+                    <li><a class="list" href="">Myntra Internet Pvt Ltd,</a></li>
+                    <li><a class="list" href="">Buildings Alyssa,Begonia and</a></li>
+                    <li><a class="list" href="">Clove Empassy Tech Village,</a></li>
+                    <li><a class="list" href="">Outer Ring Road,</a></li>
+                    <li><a class="list" href="">Bengaluru</a></li>
+                    <li><a class="list" href="">Karnataka , India</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2">
+                <h6 class="footer-head" style="font-size: 13px;">Registered Office Address</h6>
+                <ul class="list-unstyled">
+                    <li><a class="list" href="">Myntra Internet Pvt Ltd,</a></li>
+                    <li><a class="list" href="">Buildings Alyssa,Begonia and</a></li>
+                    <li><a class="list" href="">Clove Empassy Tech Village,</a></li>
+                    <li><a class="list" href="">Outer Ring Road,</a></li>
+                    <li><a class="list" href="">Bengaluru,560103,</a></li>
+                    <li><a class="list" href="">Karnataka , India</a></li>
+                    <li><a class="list" href="">CIN :UJS5412633SDJS55</a></li>
+                    <li><a class="list" href="">Telephone : 044-44656562</a></li>
+
+
+                </ul>
+            </div>
+</div>
+</div>
+
     
 
       
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 

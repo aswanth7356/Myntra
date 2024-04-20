@@ -8,10 +8,22 @@
 	background-size: cover;
 }
 
+body{
+	overflow-x: hidden;
+}
+
+
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
+
+}
+
+.signup{
+width: 90px;
+margin-left: 4px;
 }
 
 .nav-item:hover{
@@ -38,7 +50,14 @@
 	transition: 1s; 
 }
 
-
+.list{
+	text-decoration: none;
+	color: #fff;
+	font-size: small;
+}
+.footer-head{
+	color: rgb(82, 81, 81);
+}
 
 section {
 	display: flex;
@@ -49,7 +68,7 @@ section {
 	font-size: 1em;
 	color: #fff;
 	text-transform: uppercase;
-	gap: 30px;
+	gap: 30px; 	
 	padding-top: 200px;
 	padding-left: 400px;
 }
